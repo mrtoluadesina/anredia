@@ -9,7 +9,7 @@ body {
 }
 body {
   scroll-behavior: smooth;
-  font-family: 'Open-Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 header {
@@ -59,6 +59,73 @@ header {
   font-weight: 300;
 }
 
+section.what-we-do {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+section.what-we-do p {
+  font-size: 1.3rem;
+  font-weight: 300;
+  width: 100%;
+  padding: 20px;
+  line-height: 40px;
+}
+
+section.what-we-do p a {
+  color: #e65d5d;
+  text-decoration: none;
+  font-size: 1.5rem;
+  margin-top: 20px;
+  display: block;
+}
+section.our-process {
+  height: fit-content;
+  padding: 20px 20px 10px 20px;
+  background: #e65d5d;
+}
+section.our-process p {
+  font-weight: 300;
+  font-size: 3rem;
+}
+
+.stages {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 90%;
+  margin: 70px auto 10px auto;
+  padding-bottom: 20px;
+}
+.single-stage {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 50px;
+}
+.single-stage .stage-number {
+  font-size: 1.4rem;
+  font-weight: 300;
+  margin-right: 20px;
+  padding-top: 53px;
+}
+.single-stage .stage-heading {
+  padding: 0;
+  font-size: 2rem;
+  font-weight: 400;
+}
+.single-stage .stage-brief {
+  color: #fff;
+  padding: 0;
+  font-size: 1.2rem;
+  font-weight: 300;
+  line-height: 32px;
+  margin-top: 40px;
+}
+
 @media screen and (min-width: 780px) {
   header {
     flex-direction: row;
@@ -90,5 +157,36 @@ header {
   .header-text {
     padding: 70px;
     font-size: 4rem;
+  }
+  section.what-we-do {
+    height: 700px;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  section.what-we-do p {
+    font-size: 2.3rem;
+    width: 70%;
+    padding: 20px 180px 20px 0;
+    line-height: 70px;
+  }
+  section.our-process {
+    padding: 30px;
+  }
+  section.our-process p {
+    padding: 50px 70px;
+    font-weight: 500;
+    font-size: 3.3rem;
+  }
+  .stages {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    width: 90%;
+    margin: 70px auto;
+    padding-bottom: 80px;
+  }
+  .single-stage {
+    width: 32%;
+    margin-bottom: 0;
   }
 }
