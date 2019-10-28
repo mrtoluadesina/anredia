@@ -133,11 +133,31 @@ section.our-process p {
 
 .our-quote p {
   padding-left: 70px;
-  font-size: 2.5rem;
+  font-size: 2.3rem;
   width: 88%;
   font-weight: 300;
   padding-top: 100px;
   padding-bottom: 100px;
+}
+
+.footer-quote {
+  height: fit-content;
+  padding: 20px;
+}
+
+.footer-quote p {
+  padding-left: 70px;
+  font-size: 2.3rem;
+  width: 60%;
+  font-weight: 300;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.footer-search {
+  width: 90%;
+  margin: auto;
+  border-bottom: 1px solid #999;
 }
 
 @media screen and (min-width: 780px) {
