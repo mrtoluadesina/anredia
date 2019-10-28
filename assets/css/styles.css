@@ -126,6 +126,20 @@ section.our-process p {
   margin-top: 40px;
 }
 
+.our-quote {
+  height: fit-content;
+  padding: 20px;
+}
+
+.our-quote p {
+  padding-left: 70px;
+  font-size: 2.5rem;
+  width: 88%;
+  font-weight: 300;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
 @media screen and (min-width: 780px) {
   header {
     flex-direction: row;
