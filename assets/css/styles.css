@@ -132,12 +132,12 @@ section.our-process p {
 }
 
 .our-quote p {
-  padding-left: 70px;
+  padding-left: 0;
   font-size: 2.3rem;
-  width: 88%;
+  width: 100%;
   font-weight: 300;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .footer-quote {
@@ -146,12 +146,12 @@ section.our-process p {
 }
 
 .footer-quote p {
-  padding-left: 70px;
+  padding-left: 0;
   font-size: 2.3rem;
-  width: 60%;
+  width: 100%;
   font-weight: 300;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .footer-search {
@@ -159,7 +159,81 @@ section.our-process p {
   margin: auto;
   border-bottom: 1px solid #999;
 }
-
+.footer-search input {
+  width: 90%;
+  padding: 20px 0;
+  font-size: 1.3rem;
+  font-weight: 300;
+  border: none;
+}
+.footer-search button {
+  font-size: 1.3rem;
+  border: none;
+  color: #e65d5d;
+  font-weight: 300;
+  outline: none;
+  cursor: pointer;
+}
+section.quick-links {
+  height: fit-content;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  padding: 50px 0;
+}
+section.quick-links div {
+  margin-bottom: 10px;
+}
+section.quick-links div a {
+  font-size: 0.9rem;
+  color: #000;
+  text-decoration: none;
+  font-weight: 300;
+  padding: 10px 5px;
+}
+section.quick-links div.legal a {
+  color: #999;
+  font-size: 0.9rem;
+}
+section.our-goal {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+}
+.accordion-buttons {
+  width: 100%;
+  background: #fff;
+  display: flex;
+  padding-left: 20px;
+  flex-direction: row;
+}
+.accordion-buttons span {
+  padding: 15px 10px 15px 0;
+  font-size: 1rem;
+  font-weight: 300;
+  color: #999;
+  cursor: pointer;
+}
+.accordion-buttons .active {
+  color: #000;
+}
+.accordion-details {
+  width: 100%;
+  background: #e65d5d;
+  padding: 50px 20px;
+  padding-right: 0;
+}
+.accordion-details p {
+  color: #fff;
+  font-weight: 300;
+  font-size: 1.3rem;
+  margin-bottom: 50px;
+  line-height: 30px;
+}
 @media screen and (min-width: 780px) {
   header {
     flex-direction: row;
@@ -222,5 +296,51 @@ section.our-process p {
   .single-stage {
     width: 32%;
     margin-bottom: 0;
+  }
+  .our-quote p {
+    padding-left: 70px;
+    font-size: 2.3rem;
+    width: 88%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  .footer-quote p {
+    padding-left: 70px;
+    font-size: 2.3rem;
+    width: 60%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+  section.quick-links {
+    flex-direction: row;
+  }
+  section.quick-links div {
+    margin-bottom: 0;
+  }
+  section.quick-links div a {
+    font-size: 1.3rem;
+    padding: 0 20px;
+  }
+  section.our-goal {
+    display: flex;
+    flex-direction: row;
+  }
+  .accordion-buttons {
+    width: 30%;
+    padding-left: 90px;
+    display: flex;
+    flex-direction: column;
+  }
+  .accordion-buttons span {
+    padding: 15px 0;
+    font-size: 2.5rem;
+  }
+  .accordion-details {
+    width: 70%;
+    padding: 100px 150px 100px 70px;
+  }
+  .accordion-details p {
+    margin-bottom: 50px;
+    line-height: 30px;
   }
 }
