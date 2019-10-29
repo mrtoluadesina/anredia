@@ -239,6 +239,10 @@ section.our-goal {
   margin-bottom: 50px;
   line-height: 30px;
 }
+.tabcontent {
+  display: none;
+  animation: fadeEffect 1s;
+}
 @media screen and (min-width: 780px) {
   header {
     flex-direction: row;
